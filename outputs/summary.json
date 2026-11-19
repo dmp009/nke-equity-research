@@ -1,0 +1,24 @@
+{
+  "price": 34.33,
+  "target": 44,
+  "rating": "BUY",
+  "upside": 0.28167783279930103,
+  "scenarios": {
+    "Bear": 25.3,
+    "Base": 44.48,
+    "Bull": 59.81
+  },
+  "wacc": 0.08772685926124936,
+  "implied": {
+    "EV/EBITDA (peer IQR)": [
+      25.0,
+      32.77,
+      42.99
+    ],
+    "EV/Sales (peer IQR)": [
+      38.18,
+      55.4,
+      70.94
+    ]
+  }
+}

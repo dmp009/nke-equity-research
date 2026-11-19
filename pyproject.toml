@@ -1,0 +1,16 @@
+[project]
+name = "nkeresearch"
+version = "1.0.0"
+description = "Nike equity research: 3-statement model, DCF, stock pitch and industry deep dive"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["nkeresearch"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["slow: recalculates the Excel workbook (minutes)"]

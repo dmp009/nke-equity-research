@@ -1,0 +1,10 @@
+pandas>=2.2
+numpy
+openpyxl
+matplotlib
+python-pptx
+requests
+yfinance
+pytest
+ruff
+formulas
