@@ -15,7 +15,7 @@ def main() -> None:
     snap = json.loads((ROOT / "data/market_snapshot.json").read_text())
     table = [m.value(h, snap, s)[0] for s in ("Bear", "Base", "Bull")]
     write_workbook(h, snap, ROOT / "outputs/NKE_3statement_DCF.xlsx", table)
-    summary = deck.build(h, snap, ROOT / "outputs", ROOT / "docs/img")
+    summary = deck.build(h, snap, ROOT / "outputs")
     industry.charts(snap, ROOT / "docs/img")
     (ROOT / "outputs/summary.json").write_text(json.dumps(summary, indent=2))
     print(json.dumps(summary, indent=2))
